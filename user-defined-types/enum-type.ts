@@ -11,4 +11,12 @@ enum RequestType {
 }
 
 
-console.log(RequestType);
+console.log(RequestType.DeleteData);
+
+// string enum
+enum RequestType2 {
+    GetData = "get-data",
+    ReadData = "read-data",
+    DeleteData = "delete-data"
+}
+console.log(RequestType2["ReadData"]);
